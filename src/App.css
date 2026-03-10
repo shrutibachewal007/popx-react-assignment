@@ -1,38 +1,565 @@
-.App {
-  text-align: center;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* page background */
+
+body{
+  background:#eef2ff;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* mobile card */
+
+/* .container{
+  width:375px;
+  min-height:650px;
+  background:white;
+  padding:30px 25px;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+
+  border-radius:14px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.1);
+} */
+
+.container{
+  width:375px;
+  height:720px;
+
+  background:white;
+  padding:30px 25px;
+
+  border-radius:14px;
+  box-shadow:0 8px 25px rgba(0,0,0,0.08);
+
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* title */
+
+.title{
+  font-size:24px;
+  font-weight:700;
+  color:#1e293b;
+  margin-bottom:10px;
 }
 
-.App-link {
-  color: #61dafb;
+/* subtitle */
+
+.subtitle{
+  font-size:14px;
+  color:#64748b;
+  margin-bottom:25px;
+  line-height:1.5;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* primary button */
+
+.btn-primary{
+  width:100%;
+  padding:14px;
+  border:none;
+  border-radius:8px;
+  font-size:15px;
+  font-weight:600;
+  color:white;
+
+  background:linear-gradient(135deg,#2563eb,#7c3aed);
+
+  margin-bottom:12px;
 }
+
+/* secondary button */
+
+.btn-secondary{
+  width:100%;
+  padding:14px;
+  border:none;
+  border-radius:8px;
+  font-size:15px;
+  font-weight:600;
+
+  background:#e0e7ff;
+  color:#3730a3;
+}
+
+
+
+/* SIGNUP FORM */
+
+/* .form-title{
+  font-size:22px;
+  font-weight:700;
+  margin-bottom:25px;
+  color:#2b2b2b;
+  line-height:1.3;
+} */
+ .form-title{
+  font-size:22px;
+  font-weight:700;
+  color:#2b2b2b;
+  line-height:1.3;
+  margin-bottom:20px;
+}
+
+/* input container */
+
+/* .input-group{
+  position:relative;
+  margin-bottom:22px;
+}
+
+
+
+.input-group label{
+  position:absolute;
+  top:-8px;
+  left:12px;
+  background:white;
+  padding:0 5px;
+
+  font-size:12px;
+  font-weight:600;
+  color:#6c25ff;
+} */
+ .input-group{
+  position:relative;
+  margin-bottom:18px;
+}
+
+.input-group label{
+  position:absolute;
+  top:-8px;
+  left:12px;
+
+  background:white;
+  padding:0 6px;
+
+  font-size:12px;
+  font-weight:600;
+  color:#6c25ff;
+}
+
+.required{
+  color:#ff4d4f;
+}
+
+.input-group input{
+  width:100%;
+  padding:14px;
+  border:1px solid #d9d9d9;
+  border-radius:8px;
+  font-size:14px;
+}
+
+/* red star */
+
+.required{
+  color:#ff4d4f;
+}
+
+/* input */
+
+.input-group input{
+  width:100%;
+  padding:14px;
+  border:1px solid #d9d9d9;
+  border-radius:8px;
+  font-size:14px;
+  outline:none;
+}
+
+/* radio section */
+
+/* .agency-title{
+  font-size:14px;
+  font-weight:500;
+  margin-bottom:10px;
+}
+
+.radio-options{
+  display:flex;
+  gap:20px;
+  margin-bottom:28px;
+} */
+ .agency-title{
+  font-size:14px;
+  font-weight:500;
+  margin-top:5px;
+  margin-bottom:8px;
+}
+
+.radio-options{
+  display:flex;
+  gap:18px;
+  margin-bottom:30px;
+}
+
+/* button */
+
+/* .submit-btn{
+  width:100%;
+  height:46px;
+  border:none;
+  border-radius:8px;
+  font-weight:600;
+  font-size:14px;
+  color:white;
+
+  background:linear-gradient(90deg,#3b82f6,#7c3aed);
+} */
+.submit-btn{
+  width:100%;
+  height:46px;
+
+  border:none;
+  border-radius:8px;
+
+  font-weight:600;
+  font-size:14px;
+  color:white;
+
+  background:linear-gradient(90deg,#3b82f6,#7c3aed);
+}
+
+
+
+
+/* SIGNUP INPUT STYLE */
+
+/* .input-group{
+  position:relative;
+  margin-bottom:22px;
+}
+
+.input-group input{
+  width:100%;
+  padding:14px;
+  border:1px solid #d9d9d9;
+  border-radius:8px;
+  font-size:14px;
+  outline:none;
+  background:white;
+} */
+
+/* floating label */
+
+/* .input-group label{
+  position:absolute;
+  top:-8px;
+  left:12px;
+
+  background:white;
+  padding:0 5px;
+
+  font-size:12px;
+  font-weight:600;
+  color:#6c25ff;
+} */
+
+/* red star */
+
+/* .required{
+  color:#ff4d4f;
+} */
+
+.landing-content{
+  margin-top:auto;
+}
+
+
+.signup-wrapper{
+  display:flex;
+  flex-direction:column;
+  height:100%;
+}
+
+.form-fields{
+  flex-grow:1;
+}
+
+/* .submit-btn{
+  margin-top:20px;
+} */
+
+.submit-btn{
+  width:100%;
+  height:46px;
+  border:none;
+  border-radius:8px;
+  font-weight:600;
+  font-size:14px;
+  color:white;
+  background:linear-gradient(90deg,#3b82f6,#7c3aed);
+}
+
+
+
+
+.form-subtitle{
+color:#6b7280;
+font-size:14px;
+margin-top:6px;
+margin-bottom:25px;
+line-height:1.5;
+}
+
+.login-btn{
+width:100%;
+height:45px;
+border:none;
+border-radius:8px;
+font-size:15px;
+font-weight:600;
+background:#d1d5db;
+color:#ffffff;
+margin-top:10px;
+cursor:pointer;
+}
+
+
+
+
+/* .account-header{
+background:#f3f4f6;
+padding:16px;
+font-weight:600;
+font-size:16px;
+border-bottom:1px solid #e5e7eb;
+}
+
+.profile-section{
+display:flex;
+align-items:center;
+gap:14px;
+padding:18px 16px;
+}
+
+.profile-image-wrapper{
+position:relative;
+}
+
+.profile-img{
+width:60px;
+height:60px;
+border-radius:50%;
+object-fit:cover;
+}
+
+.camera-icon{
+position:absolute;
+bottom:0;
+right:0;
+background:#7c3aed;
+color:white;
+width:20px;
+height:20px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:11px;
+}
+
+.profile-name{
+font-weight:600;
+font-size:15px;
+}
+
+.profile-email{
+font-size:13px;
+color:#6b7280;
+}
+
+.profile-description{
+padding:0 16px;
+font-size:13px;
+color:#4b5563;
+line-height:1.6;
+max-width:260px;
+}
+
+.bottom-border{
+border-bottom:2px dashed #e5e7eb;
+margin-top:20px;
+}
+ */
+
+/* .account-header{
+background:#f3f4f6;
+padding:16px;
+font-weight:600;
+font-size:15px;
+border-bottom:1px solid #e5e7eb;
+}
+
+.profile-section{
+display:flex;
+align-items:center;
+gap:12px;
+padding:18px 16px 10px 16px;
+}
+
+.profile-image-wrapper{
+position:relative;
+}
+
+.profile-img{
+width:50px;
+height:50px;
+border-radius:50%;
+object-fit:cover;
+}
+
+.camera-icon{
+position:absolute;
+bottom:-2px;
+right:-2px;
+background:#7c3aed;
+color:white;
+width:16px;
+height:16px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:9px;
+border:2px solid white;
+}
+
+.profile-name{
+font-weight:600;
+font-size:14px;
+}
+
+.profile-email{
+font-size:12px;
+color:#6b7280;
+}
+
+.profile-description{
+padding:10px 16px;
+font-size:13px;
+color:#4b5563;
+line-height:1.6;
+max-width:270px;
+}
+
+.bottom-border{
+border-bottom:1px dashed #d1d5db;
+margin-top:12px;
+} */
+.account-header{
+background:#f3f4f6;
+padding:16px;
+font-weight:600;
+font-size:15px;
+/* border-bottom:1px solid #e5e7eb; */
+}
+
+/* .profile-section{
+display:flex;
+align-items:center;
+gap:14px;
+padding:18px 16px 12px 16px;
+} */
+.profile-section{
+display:flex;
+align-items:center;
+gap:10px;
+padding:16px;
+}
+
+.profile-image-wrapper{
+position:relative;
+}
+
+.profile-img{
+width:48px;
+height:48px;
+border-radius:50%;
+object-fit:cover;
+}
+
+.camera-icon{
+position:absolute;
+bottom:-2px;
+right:-2px;
+background:#cdbfe5;
+color:white;
+width:22px;
+height:22px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:14px;
+border:1px solid white;
+}
+
+.profile-info{
+display:flex;
+flex-direction:column;
+}
+
+.profile-name{
+font-size:14px;
+font-weight:600;
+}
+
+.profile-email{
+font-size:12px;
+color:#6b7280;
+}
+
+/* .profile-description{
+padding:10px 16px;
+font-size:13px;
+color:#4b5563;
+line-height:1.6;
+max-width:260px;
+} */
+.profile-description{
+padding:10px 16px;
+font-size:10px;
+color:#4b5563;
+line-height:1.6;
+width:255px;
+}
+
+.bottom-border{
+border-bottom:1px dashed #d1d5db;
+margin-top:10px;
+}
+
+
+
+
+
+
+/* .app-container{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+background:#cfd4e1;
+} */
+
+.mobile-card{
+width:320px;
+height:640px;
+background:white;
+border-radius:12px;
+overflow:hidden;
+} 
